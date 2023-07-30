@@ -1,0 +1,36 @@
+{
+  "name": "devconnector",
+  "version": "1.0.0",
+  "description": "web application that post delete profile customer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "fuad Nasser Aldeen",
+  "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.0-alpha1",
+    "config": "^3.3.8",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.5",
+    "multer": "^1.4.5-lts.1",
+    "react-bootstrap": "^2.7.0",
+    "react-favicon": "^1.0.1",
+    "react-file-base64": "^1.0.3",
+    "redux": "^4.2.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
