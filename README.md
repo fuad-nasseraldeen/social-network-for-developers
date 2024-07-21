@@ -13,6 +13,12 @@ It is a small social network app that includes authentication, profiles, and for
   
 # local running
 
+- cd client 
+- npm install
+- cd ..
+- npm install
+- npm install ajv@latest ajv-keywords@latest
+
 ## to run in dev mode => npm run dev - will run both client-side on port 3000 and backend side on port 5000 at the same time
 
 
